@@ -277,6 +277,9 @@ footer {
     display:none;
   }
 }
+clear {
+	clear:both;
+}
 
 @media print {
   body {

@@ -1,0 +1,90 @@
+<!doctype html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mingzhi Zeng's</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    
+    
+    
+    <script src="javascripts/thumbnailctrl/js/jquery.min.js"></script>
+    <script src="javascripts/thumbnailctrl/js/modernizr-2.0.6.min.js"></script>
+    <script src="javascripts/thumbnailctrl/js/responsivethumbnailgallery.js"></script>
+    <script>
+		$(document).ready(function() {
+    var gallery_1 = new $.ThumbnailGallery($('#zrally-gallery'), {
+        thumbImages: 'imgs/gamethumbs/zrally-snap-',
+        smallImages: 'imgs/gamesmall/zrally-snap-',
+        largeImages: 'imgs/gamelarge/zrally-snap-',
+        count: 6,
+        thumbImageType: 'jpeg',
+        imageType: 'jpeg',
+        breakpoint: 600,
+        shadowStrength: 1
+    });
+	var gallery_2 = new $.ThumbnailGallery($('#tcs-gallery'), {
+        thumbImages: 'imgs/gamethumbs/tcs-snap-',
+        smallImages: 'imgs/gamesmall/tcs-snap-',
+        largeImages: 'imgs/gamelarge/tcs-snap-',
+        count: 6,
+        thumbImageType: 'jpeg',
+        imageType: 'jpeg',
+        breakpoint: 600,
+        shadowStrength: 1
+    });
+});
+	</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mingzhi Zeng</h1>
+        
+        <p class="view"><a href="projects.html">Projects<small>Some codings and ideas</small></a></p>
+        <p class="view"><a href="research.html">Research<small>About Social Search</small></a></p>
+        <p class="view"><a href="games.html">Early Games<small>Childish pieces of work</small></a></p>
+        <p class="view"><a href="webdesign.html">Web Design<small>Some websites I designed</small></a></p>
+        <h3>About me</h3>
+        <p class="view"><small>I'm currently an undergraduate student in the Computer Science & Technology Department in Nanjing University.</small></p>
+        <p class="view"><small>I'm interested in many fields, especially Machine Learning, Social Network Analysis and Information Retrieval.</small></p>
+        <p class="view"><small>I like Games, Soccer and Rock.</small></p>
+        <h3>Contact</h3>
+        <p><small>Mobile: +86 15996316512</small><br/><small>Email: zeostudio dot gmail dot com</small></p>
+      </header>
+      <section>
+        <h2>Z-Rally</h2>
+        <p>This little racing game was developed in 2006, when I was 15.  Though abandoned for years, I managed to find out a link that still work:</p>
+        <blockquote>
+        <p><a href="http://www.flash8.net/flash/27075.shtml" target="_blank">Z-Rally Game</a><br/><small><em>You may wish to translate the page with Chrome</em></small></p>
+         
+        </blockquote>
+        <p>To drive the cars, use the arrow keys. Here are some previews:</p>
+        <div id="zrally-gallery"></div>
+        <div class="clear"></div>
+        <br/>
+        <hr>
+        <h2>The Crime Scene</h2>
+        <p>Also developed in 2006, a mystery game. Your mission is to get out of the room use all the items you can collect. Think!</p>
+        <blockquote>
+        <p><a href="http://www.7k7k.com/swf/10787.htm" target="_blank">The Crime Scene Game</a><br/><small><em>You may wish to translate the page with Chrome</em></small></p>
+         
+        </blockquote>
+        <p>Some previews:</p>
+        <div id="tcs-gallery"></div>
+        <div class="clear"></div>
+        
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>

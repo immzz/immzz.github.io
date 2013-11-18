@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mingzhi Zeng's</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/thumbnailctrl/js/jquery.min.js"></script>
+    <script src="javascripts/thumbnailctrl/js/modernizr-2.0.6.min.js"></script>
+    <script src="javascripts/thumbnailctrl/js/responsivethumbnailgallery.js"></script>
+    <script>
+		$(document).ready(function() {
+    var gallery_1 = new $.ThumbnailGallery($('#osgame-gallery'), {
+        thumbImages: 'imgs/projectthumbs/osgame-snap-',
+        smallImages: 'imgs/projectsmall/osgame-snap-',
+        largeImages: 'imgs/projectlarge/osgame-snap-',
+        count: 5,
+        thumbImageType: 'jpg',
+        imageType: 'jpg',
+        breakpoint: 600,
+        shadowStrength: 1
+    });
+	var gallery_2 = new $.ThumbnailGallery($('#soseadisk-gallery'), {
+        thumbImages: 'imgs/projectthumbs/soseadisk-snap-',
+        smallImages: 'imgs/projectsmall/soseadisk-snap-',
+        largeImages: 'imgs/projectlarge/soseadisk-snap-',
+        count: 5,
+        thumbImageType: 'png',
+        imageType: 'png',
+        breakpoint: 600,
+        shadowStrength: 1
+    });
+});
+	</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mingzhi Zeng</h1>
+        
+        <p class="view"><a href="projects.html">Projects<small>Some codings and ideas</small></a></p>
+        <p class="view"><a href="research.html">Research<small>About Social Search</small></a></p>
+        <p class="view"><a href="games.html">Early Games<small>Childish pieces of work</small></a></p>
+        <p class="view"><a href="webdesign.html">Web Design<small>Some websites I designed</small></a></p>
+        <h3>About me</h3>
+        <p class="view"><small>I'm currently an undergraduate student in the Computer Science & Technology Department in Nanjing University.</small></p>
+        <p class="view"><small>I'm interested in many fields, especially Machine Learning, Social Network Analysis and Information Retrieval.</small></p>
+        <p class="view"><small>I like Games, Soccer and Rock.</small></p>
+        <h3>Contact</h3>
+        <p><small>Mobile: +86 15996316512</small><br/><small>Email: zeostudio dot gmail dot com</small></p>
+      </header>
+      <section>
+        <h2>LAMDA Activity Recognition Contest</h2>
+        <p><em>A course assignment of Introduction to Data Mining <a href="http://cs.nju.edu.cn/yuy/course_dm13_a2.ashx">Assignment Page</a></em></p>
+        <p>My model was ranked 2nd. Here is the breif intro to my solution.</p>
+        <h4>Feature Extraction</h4>
+        <p>The features extracted were:</p>
+        <ul>
+        <li>Mean</li>
+        <li>Standard Deviation</li>
+        <li>Energy</li>
+        <li>Entropy</li>
+        <li>Correlation</li>
+        </ul>
+        <h4>Classification</h4>
+        <p>I experimented with several algorithms. The performance was measured by F1 score. The algorithms with the best scores were Bayes, SVM and Hidden Markov Model.</p>
+        <h4>Voting</h4>
+        <p>To improve the accuracy, I designed a Voting model to combine the result sets of the classification algorithms. The performance before and after Voting is shown below.</p>
+        <table>
+          <tbody><tr>
+            <th width="22%"></th><th>Bayes</th><th>SVM</th><th>HMM</th><th>Voting</th>
+          </tr>
+          <tr>
+            <td><strong>Sum of F1</strong></td><td>9.6259</td><td>9.3893</td><td>9.7448</td><td>10.2760</td>
+          </tr>
+          
+        </tbody></table>
+        <center><em>Comparison between single classification model and Voting model</em></center>
+        <p>The basic idea is to divide the training set into diffenrent parts, each with different weight. Then train these parts with different learning algorithms. Eventually vote for the best prediction result according to votes and weights.</p>
+        <hr>
+        <h2>Implementation of an Operating System</h2>
+        <p>The development lasted for three months, including three stages: Context Switch, Inter-Process Communication and User Process & Memory Management.</p>
+        <p>One interesting part is that we were required to design a game at first assignment, running without the operating system. Here is a glance at my game:</p>
+        <div id="osgame-gallery"></div>
+        <div class="clear"></div>
+        
+        <br/>
+        <hr>
+        <h2>SoseaDisk: A Distributed Storage System</h2>
+        <p>This is a course design in Java Programming. We were required to build a distributed system using Java. We practiced a semi-P2P structure in this project. In this system, the so called Super Nodes act as the Masters. But one thing that distinguishes this system from Master/Slave structure is that these Super Nodes can be elected again by the system itself. Once any Super Node breaks down, it can be quickly replaced. </p><p>As for system monitoring, any node that is not a Super Node must send heartbeats to the nearby Super Node, and Super Nodes share the information they've got with each other.</p>
+        <p>The project is hosted on Github, <a href="https://github.com/immzz/hatrick/tree/develop" target="_blank">click here to visit</a>.</p>
+        <p>Some screenshots:</p>
+        <div id="soseadisk-gallery"></div>
+        <div class="clear"></div>
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
