@@ -1,6 +1,6 @@
 # My personal homepage
 
-[Demo the Theme](http://orderedlist.github.com/minimal/)
+Under construction
 
 # License
 
