@@ -277,9 +277,18 @@ footer {
     display:none;
   }
 }
-clear {
-	clear:both;
-}
+
+/* new clearfix */
+.clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clear             { zoom: 1; } /* IE6 */
+*:first-child+html .clear { zoom: 1; } /* IE7 */
 
 @media print {
   body {
