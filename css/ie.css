@@ -1,0 +1,29 @@
+#resumenav.affix {width: 185px; top: 20px;}
+.backgrounded .section .section-title{ margin-left: -20px;}
+.blogitem, .portfolioitem {height: 220px; margin-bottom: 20px;}
+.timeline-item-content {width: 508px; padding: 5px 20px;}
+#resumenav a {padding: 5px 20px;}
+.well {margin-bottom: 20px; padding: 2px 20px 0;}
+.author {margin-bottom: 20px;}
+.section.first-section, .tools {padding-top: 20px;}
+.section .section-title {padding: 5px 20px; margin-bottom: 20px;}
+.timeline-arrow i {top: 25px;}
+.timeline-item-date {margin-top: 21px;}
+.timeline-item-trigger span {margin-top: 11px;}
+.timeline-item {margin-bottom: 20px;}
+.skills h2.section-title, #personal-information h2 {margin-bottom: 0;}
+.testimonial {margin-bottom: 0;}
+#portfolio #portfolio-filters {margin-bottom: 18px;}
+.blogitem .blogitem-hoverinfo, .portfolioitem .portfolioitem-hoverinfo {padding: 10px 20px;}
+.blogitem .blogitem-hoverinfo {padding: 20px;}
+.blogitem-content h2, .portfolioitem-content h2 {margin-top: 20px;}
+#portfolio-back, #blog-back {margin-bottom: 20px;}
+.portfolioitem h3 {margin-bottom: 11px;}
+.blogitem .blogitem-actions, .portfolioitem .portfolioitem-actions {margin-top: 20px;}
+#footer {padding-top: 10px;}
+.blogitem .blogitem-date, .blogitem h3 {background: url(../images/tb.png) repeat;}
+.timeline-arrow i {
+left: 143px;
+filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476);
+-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.707106;
+}

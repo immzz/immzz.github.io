@@ -1,0 +1,71 @@
+/* Skin Parameters */
+@primarycolor: #ce5252;
+@secondarycolor: #9c383a;
+@bgcolor: #ececec;
+@navbgprimarycolor: #ce5252;
+@navbgsecondarycolor: #9c383a;
+@navborder: #9c383a;
+@navcolor: #fff;
+@navcolorhover: #fff;
+@footercolor:#666;
+@sectiontitlecolor: #fff;
+@sectiontitlebgprimarycolor: #ce5252;
+@sectiontitlebgsecondarycolor: #9c383a;
+@btnbgcolor: #ce5252;
+@btnbgcolorhover: #9c383a;
+@timelinebgcolor: #ce5252;
+@timelinebgcolorhover: #9c383a;
+@progressbarprimary: #ce5252;
+@progressbarsecondary: #9c383a;
+@itemhover: #ce5252;
+@itemhovertext: #fff;
+@navposition: right;
+@shadowsize: 15px;
+@shadowopacity: 0.4;
+@bgimage: "../images/textures/vichy.png";
+@font: 'Droid Sans', sans-serif;
+
+
+
+
+
+/* Skin CSS */
+h1, h2, h3, h4, h5, h6 {font-family: @font;}
+a,.primary-color, .dark .primary-color {color: @primarycolor;}
+a:hover {color: @secondarycolor;}
+.blogitem .blogitem-hoverinfo, .portfolioitem .portfolioitem-hoverinfo {background-color: @itemhover; color: @itemhovertext;}
+#resumenav a {color: @navcolor;}
+#resumenav a:hover {background-color: @navbgsecondarycolor; color: @navcolorhover;}
+.nav-pills > .active > a, .nav-pills > .active > a:hover,
+.nav-list > .active > a, .nav-list > .active > a:hover,
+.icon-btn:hover,
+.btn-primary:hover, 
+.blogitem .blogitem-actions a:hover, .portfolioitem .portfolioitem-actions a:hover 
+{background-color: @btnbgcolorhover!important;}
+#resumenav li.active a, .nav-pills > .active > a {background-color: @navbgsecondarycolor!important; color: @navcolorhover;}
+.icon-btn,.btn-primary {background-color: @btnbgcolor;}
+.progress .bar {
+	background-color: @progressbarprimary;
+	background-image: -moz-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@progressbarprimary), to(@progressbarsecondary));
+  	background-image: -webkit-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
+  	background-image: -o-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
+  	background-image: linear-gradient(to bottom, @progressbarprimary, @progressbarsecondary);
+}
+body {background: @bgcolor url(@bgimage) fixed repeat !important;}
+#content {background: #fff;
+-moz-box-shadow: 0 0 @shadowsize rgba(0,0,0,@shadowopacity);
+-webkit-box-shadow: 0 0 @shadowsize rgba(0,0,0,@shadowopacity);
+box-shadow: 0 0 @shadowsize rgba(0,0,0,@shadowopacity);
+}
+#sidebar.sbright .sidebar-nav {background: @navbgprimarycolor; border-left: 5px solid @navborder; border-right: none;}
+#sidebar.sbleft .sidebar-nav {background: @navbgprimarycolor; border-right: 5px solid @navborder; border-left: none;}
+#footer {color: @footercolor;}
+.section .section-title {color: @sectiontitlecolor; background-color: @sectiontitlebgprimarycolor; border-right: 5px solid @sectiontitlebgsecondarycolor;}
+.section .section-title .glyphicons i:before{color: @sectiontitlecolor!important;}
+.timeline-item-trigger span i:before {background-color: @timelinebgcolor; border: 6px solid @timelinebgcolor; }
+.timeline-item-trigger span:hover i:before {background-color: @timelinebgcolorhover; border-color: @timelinebgcolorhover;}
+
+@media (max-width: 767px) {
+	.section .section-title {border-bottom: 5px solid @secondarycolor; border-top: 5px solid @secondarycolor;}
+}

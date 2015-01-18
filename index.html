@@ -1,50 +1,472 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-  	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<head>
+	<meta charset="utf-8">
+	<title>Mingzhi Zeng, Master Candidate in Carnegie Mellon University</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- jQuery -->
+	<script src="./js/jquery.min.js"></script><!-- local jquery -->
+	<!-- 
+	online version of jquery
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	-->
+	
+	<!-- Bootstrap -->
+	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Glyphicons -->
+	<link href="./css/glyphicons.css" rel="stylesheet" media="screen">
 
-  ga('create', 'UA-54079632-1', 'auto');
-  ga('send', 'pageview');
+	<!-- Plugins -->
+	<script src="./js/jquery.easing.1.3.js"></script>
+	<script src="./js/jquery.isotope.min.js"></script>
+	<script src="./js/jquery.ba-resize.min.js"></script>
+	
+	<link href="./css/prettyPhoto.css" rel="stylesheet" media="screen">
+	<script src="./js/jquery.prettyPhoto.js"></script>
+	
+	<script src="./js/klass.min.js"></script>
+	<script src="./js/code.photoswipe.jquery-3.0.4.min.js"></script>
+	<link href="./css/photoswipe.css" rel="stylesheet" media="screen">
+	
+	<!-- Theme -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Oswald|Droid+Sans|Yanone+Kaffeesatz|Droid+Serif|Ubuntu|Lobster|Francois+One|Arvo|Changa+One|Rokkitt|Nunito|Bitter|Merriweather|Raleway|Pacifico|Josefin+Sans|Questrial|Cantarell|Norican|Vollkorn|Quicksand|Limelight|Cantata+One|Bree+Serif|Oleo+Script|Playfair+Display|Quattrocento+Sans|Berkshire+Swash|Passion+One|Cuprum' rel='stylesheet' type='text/css'>
+	<link href="./style.css" rel="stylesheet" media="screen">
+		
+	<!-- Skin -->
+	<link type="text/css" rel="stylesheet/less" href="./css/skin.less" media="screen">
+	<!-- LESS.js -->
+	<script src="./js/less-1.3.3.min.js"></script>
+	
+	<script src="./js/scripts.js"></script>
+	
 
-</script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Mingzhi Zeng, Master Candidate in Carnegie Mellon University</title>
-    
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Mingzhi Zeng</h1>
-        <p class="view"><a href="projects.html">Projects<small>Some codings and ideas</small></a></p>
-        <p class="view"><a href="research.html">Research<small>Social Data Mining & Mechanism Design</small></a></p>
-        <p class="view"><a href="other.html">Other<small>Games and Designs</small></a></p>
-        <p class="view"><a href=".">About Me</a></p>
-      </header>
-      <section>
-        <h2>About me</h2>
-        <p class="view">I'm currently a graduate student in Language Technologies Institute of Carnegie Mellon University.</p>
-        <p class="view">I'm interested in many fields, especially Machine Learning, Social Network Analysis and Information Retrieval.</p>
-        <p class="view">I like Games, Soccer and Rock.</p>
-        <h2>Contact</h2>
-        <p>Mobile: four one two 951 two one one two<br/>Email: zeostudio at gmail dot com</p>
-      </section>
-      <footer>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="./css/ie.css" />
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- PRINT CSS -->
+	<link type="text/css" rel="stylesheet" href="./css/print.css" media="print">
+	
+	
+</head>
+
+<body class="backgrounded" data-spy="scroll" data-target=".sidebar-nav">
+		
+<div class="navbar navbar-inverse navbar-fixed-top visible-phone noprint" id="phone-navbar">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Matthew Zeng</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li><a href="#about-me" class="scroller">About me</a></li>
+					<li><a href="#personal-information" class="scroller">Personal Info</a></li>
+					<li><a href="#education" class="scroller">Education</a></li>
+					<li><a href="#employment" class="scroller">Employment</a></li>
+					<li><a href="#skills" class="scroller">Skills</a></li>
+					<li><a href="#research" class="scroller">Research</a></li>
+					<li><a href="#coursedesign" class="scroller">Course Designs</a></li>
+					<li><a href="#gamedesign" class="scroller">Game Designs</a></li>
+					<li><a href="#webdesign" class="scroller">Web Designs</a></li>
+					<li><a href="#hobbies" class="scroller">Hobbies</a></li>
+					<li><a href="#contact" class="scroller">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+</div><!--/#phone-navbar -->
+
+<div class="container">
+      <div class="row" id="content">
+      	
+      	
+      	
+      	<!-- If you want the sidebar placed on the left, place it just after this and change the sbright class by sbleft -->
+      	
+
+        <!-- MAIN CONTENT -->
+        <div class="span9 equal" id="main-content">
         
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+        	<div class="tools noprint visible-desktop">
+				<a href="javascript:if(window.print)window.print()" title="Print" data-placement="bottom" class="tips glyphicons print"><i></i></a>
+				<a href="./CV_Matthew_Zeng.pdf" title="Download CV" data-placement="bottom" class="tips glyphicons file_import"><i></i></a>
+			</div>
+
+        
+        	<div class="section first-section" id="about-me">
+	            <div class="row author">
+	            	<div class="span3">
+	            		<img class="img-rounded" src="./images/avatar.jpg" alt="">
+	            	</div>
+	            	<div class="span6">
+				    	<h1>Matthew Zeng</h1><br/>
+				   		<h2 class="primary-color">Software Engineer & Data Scientist</h2>
+						<div class="social-media noprint" style="margin-top:10px;">
+							<div>
+								<div class="tips icon-btn" title="Linkedin" data-placement="bottom"><a href="https://www.linkedin.com/in/mingzhizeng" class="glyphicons white linked_in"><i></i></a></div>
+							</div>
+						</div>
+				   	</div>
+				</div>
+			
+						
+				
+				<div class="well">
+					<h3>I am a master candidate @ <a href="#">Carnegie Mellon University</a></h3>
+					<p class="lead">I am studying in Language Technologies Institute, focusing on Machine Learning and Information Retrieval. I enjoy doing research as well as building efficient software. I like games, music, design, and everything!</p>
+				</div>
+				
+						
+			</div><!--/section--> 
+            
+            <div class="section" id="personal-information">
+	            <h2 class="section-title"><span class="glyphicons user"><i></i></span>Contact<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+				
+				<div class="row">
+	        		<div class="infoline span9 first"><div class="row">
+	            		<div class="span2 muted">Address</div>
+	            		<div class="span7">4750 Centre Ave, #20</div>
+				  	</div></div>
+				  	<span class="clear"></span>
+				  	
+	        		<div class="infoline span9"><div class="row">
+					  	<div class="span2 muted">Email</div>
+					  	<div class="span7">
+					  		mingzhiz at cs dot cmu dot edu
+					  	</div>
+					</div></div>
+				  	<span class="clear"></span>
+				  	
+	        		<div class="infoline span9"><div class="row">
+					  	<div class="span2 muted">Phone</div>
+					  	<div class="span7">
+					  		412 951 2112
+					  	</div>
+					</div></div>
+				  	<span class="clear"></span>
+			  
+			  	</div>
+		  	</div><!--/section--> 
+		  	
+		  	
+		  	
+		  	
+		  	<div class="section" id="education">
+			  	<h2 class="section-title"><span class="glyphicons certificate"><i></i></span>Education<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			  	
+			  	<div class="timeline">
+			  		
+		  			 <div class="timeline-item">
+		  			 	<div class="timeline-item-date">Aug. 2014 - Present</div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_minus" data-toggle="collapse" data-target="#education1"><i></i></span></div>
+		  			 	<div class="timeline-arrow"><i></i></div>
+		  			 	<div class="timeline-item-content">
+							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#education1">Carnegie Mellon University</h3>
+							<div class="collapse in" id="education1">
+								<p><small class="muted">from August 2014 to present</small></p>
+								<h4 class="media-heading primary-color">Master in Intelligent Information Systems</h4>
+								<p><ul>
+									<li>Selected courses: Machine Learning, Search Engines, Cloud Computing, Algorithms for NLP</li>
+									<li>Reseach Project: Teachable Relation and Event Extractor, supervised by Prof. Anatole Gershman</li>
+								</ul></p>	
+							</div>
+						</div>
+					 </div><!--/timeline-item--> 
+					 <span class="clear"></span>
+					 
+					  <div class="timeline-item">
+		  			 	<div class="timeline-item-date">Sep. 2010 - June 2014</div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_plus" data-toggle="collapse" data-target="#education2"><i></i></span></div>
+		  			 	<div class="timeline-arrow"><i></i></div>
+		  			 	<div class="timeline-item-content">
+							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#education2">Nanjing University</h3>
+							<div class="collapse" id="education2">
+								<p><small class="muted">from September 2010 to June 2014</small></p>
+								<h4 class="media-heading primary-color">Bachelor in Computer Science, 3.80/4</h4>
+								<p><ul>
+									<li>Selected Courses: Algorithm Design & Analysis, Introduction to Data Mining, Software Engineering</li>
+									<li>Udergraduate thesis: Click Auction Model based on Proportional-Share Allocation, supervised by Prof. Junyuan Xie</li>
+									<li>Research Project: Intelligent Search Engine based on Social Network Analysis, supervised by Prof. Chongjun Wang & Prof. Junyuan Xie</li>
+								</ul></p>	
+							</div>
+						</div>
+					 </div><!--/timeline-item--> 
+					 <span class="clear"></span>
+			  	</div><!--/timeline --> 
+		  	
+		  	</div><!--/section-->
+			
+		  	
+		  	
+		  	
+		  	<div class="section skills" id="skills">
+		  		<h2 class="section-title"><span class="glyphicons cogwheels"><i></i></span>Skills<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			  	<h3>Data Engineering</h3>
+			  	
+			  	<div class="row">
+					<div class="span2">Machine Learning</div>
+			  		<div class="span7">
+						<span class="label">Collaborative Filtering</span>
+						<span class="label">Clustering</span>
+						<span class="label">Classification</span>
+			  		</div>
+					<span class="spacer"></span>
+			  		<div class="span2">Information Retrieval</div>
+			  		<div class="span7">
+						<span class="label">Indri</span>
+						<span class="label">BM25</span>
+						<span class="label">Lucene</span>
+						<span class="label">Learning-to-Rank</span>
+						<span class="label">Query Expansion</span>
+			  		</div>
+					<div class="span2">Natural Language Processing</div>
+					<div class="span7">
+						<span class="label">Dependency Parsing</span>
+						<span class="label">Hidden Markov Models</span>
+					</div>
+			  	</div>
+			  	
+			  	<hr/>
+			  				  	
+			  	<h3>Software Engineering</h3>
+			  	
+			  	<div class="row">
+					<div class="span2">Fundamentals</div>
+			  		<div class="span7">
+						<span class="label">Algorithms & Data Structures</span>
+						<span class="label">Software Engineering</span>
+						<span class="label">Unix/Linux</span>
+						<span class="label">TCP/IP Networking</span>
+			  		</div>
+					<span class="spacer"></span>
+			  		<div class="span2">Programming Languages</div>
+			  		<div class="span7">
+						<span class="label">C/C++</span>
+						<span class="label">Java</span>
+						<span class="label">Python</span>
+						<span class="label">MATLAB</span>
+						<span class="label">R</span>
+						<span class="label">SQL</span>
+						<span class="label">LaTex</span>
+			  			<span class="label">HTML5</span>
+			  			<span class="label">CSS3</span>
+			  			<span class="label">javascript</span>
+			  			<span class="label">Git</span>
+			  		</div>
+					<div class="span2">Traits</div>
+					<div class="span7">
+						<span class="label">Teamplayer</span>
+						<span class="label">Quick-learner</span>
+						<span class="label">Creative-thinking</span>
+					</div>
+			  	</div>
+			  	
+		  	</div><!--/section-->
+		  	
+			
+		  	<div class="section" id="employment">
+			  	<h2 class="section-title"><span class="glyphicons share_alt"><i></i></span>Employment<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			  	
+			  	<div class="timeline">
+			  		
+		  			 <div class="timeline-item">
+		  			 	<div class="timeline-item-date"> July 2013 - Oct. 2013</div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_minus" data-toggle="collapse" data-target="#position1"><i></i></span></div>
+		  			 	<div class="timeline-arrow"><i></i></div>
+		  			 	<div class="timeline-item-content">
+							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#position1">Microsoft</h3>
+							<div class="collapse in" id="position1">
+								<p><small class="muted">from July 2013 to Oct. 2013</small></p>
+								<h4 class="media-heading primary-color">SDET Intern</h4>
+								<p><ul>
+									<li>Reviewed test logs; fixed Billing failures in Microsoft Commerce Transaction Platform(CTP)</li>
+									<li>Reviewed bugs; cooperated with the SDE team to verify related code check-in</li>
+									<li>Helped with the migration of the CTP system from Shanghai to Redmond</li>
+								</ul>
+								</p>	
+							</div>
+						</div>
+					 </div><!--/timeline-item--> 
+					 <span class="clear"></span>
+			  	</div><!--/timeline --> 
+			</div><!--/section-->
+			
+			
+			
+		  	<div class="section" id="research">
+			  	<h2 class="section-title"><span class="glyphicons share_alt"><i></i></span>Research<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			  	
+			  	<div class="timeline">
+			  		
+		  			 <div class="timeline-item">
+		  			 	<div class="timeline-item-date"> Aug. 2014 - Present</div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_minus" data-toggle="collapse" data-target="#position1"><i></i></span></div>
+		  			 	<div class="timeline-arrow"><i></i></div>
+		  			 	<div class="timeline-item-content">
+							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#position1">Teachable Relations and Event Extractor</h3>
+							<div class="collapse in" id="position1">
+								<p><small class="muted">from August 2014 to present</small></p>
+								<h4 class="media-heading primary-color">supervised by Prof. Anatole Gershman</h4>
+								<p><ul>
+									<li>Building the ontology to boost the learning process of the TREE event and relation extraction system.</li>
+								</ul>
+								</p>	
+							</div>
+						</div>
+					 </div><!--/timeline-item--> 
+					 <span class="clear"></span>
+					 
+		  			 <div class="timeline-item">
+		  			 	<div class="timeline-item-date"> Oct. 2013 - June 2014</div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_minus" data-toggle="collapse" data-target="#position1"><i></i></span></div>
+		  			 	<div class="timeline-arrow"><i></i></div>
+		  			 	<div class="timeline-item-content">
+							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#position1">Click Auction Model based on Proportional-Share Allocation</h3>
+							<div class="collapse in" id="position1">
+								<p><small class="muted">from October 2013 to June 2014</small></p>
+								<h4 class="media-heading primary-color">supervised by Prof. Junyuan Xie</h4>
+								<p><ul>
+									<li>Designed a new proportional-allocation auction model for bidding and allocating ad slots in Sponsored Search.</li>
+								</ul>
+								</p>	
+							</div>
+						</div>
+					 </div><!--/timeline-item--> 
+					 <span class="clear"></span>
+					 
+		  			 <div class="timeline-item">
+		  			 	<div class="timeline-item-date"> May 2012 - June 2013</div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_minus" data-toggle="collapse" data-target="#position1"><i></i></span></div>
+		  			 	<div class="timeline-arrow"><i></i></div>
+		  			 	<div class="timeline-item-content">
+							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#position1">Intelligent Search Engine based on Social Network Analysis</h3>
+							<div class="collapse in" id="position1">
+								<p><small class="muted">from May 2012 to June 2013</small></p>
+								<h4 class="media-heading primary-color">supervised by Prof. Junyuan Xie and Prof. Chongjun Wang</h4>
+								<p><ul>
+									<li>Developedafully-functioningsearchengineplatformthatcrawlsandretrievespostsinpersonalsocialnetwork.</li>
+									<li>Reranked the results according to content relevance, user intimacy and interest similarity.</li>
+								</ul>
+								</p>	
+							</div>
+						</div>
+					 </div><!--/timeline-item--> 
+					 <span class="clear"></span>
+			  	</div><!--/timeline --> 
+			</div><!--/section-->
+			
+			<div class="section hobbies" id="hobbies">
+		  		<h2 class="section-title"><span class="glyphicons heart_empty"><i></i></span>Hobbies<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			  	
+			  	<div class="row">
+			  		<div class="span9">
+			  			<span class="label tips mobtoo" title="I love sci-fy & detective movies">
+			  				<span class="glyphicons white film"><i></i>Movies</span>
+			  			</span>
+			  			<span class="label"><span class="glyphicons white bicycle"><i></i>Bicycling</span></span>
+			  			
+			  			<span class="label tips mobtoo" title="I love RPG and SIM games!"><span class="glyphicons white gamepad"><i></i>Video games</span></span>
+			  			<span class="label tips mobtoo" title="I love ROCK music!"><span class="glyphicons white piano"><i></i>Music</span></span>
+			  			<span class="label"><span class="glyphicons white globe"><i></i>Traveling</span></span>
+			  			<span class="label"><span class="glyphicons white cake"><i></i>Cooking</span></span>
+			  		</div>
+			  	</div>
+			  	
+		  	</div><!--/section-->
+			
+
+			
+			<div class="section clearfix noprint" id="portfolio">
+				<h2 class="section-title"><span class="glyphicons show_thumbnails"><i></i></span>Portfolio<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			
+				<ul class="nav nav-pills" id="portfolio-filters">
+					<li class="active"><a href="#" data-filter=".portfolio-webdesign">Web Design</a></li>
+					<li><a href="#" data-filter=".portfolio-gamedesign">Game Design</a></li>
+				</ul>
+				<!-- Featured Portfolio items -->
+				<div class="row" id="portfolio-items">
+					
+					<div class="span3 portfolioitem portfolio-webdesign">
+						<img src="./images/thumbxunmeng.jpg" alt="">
+						<h3>Xunmeng.org</h3>
+						<div class="portfolioitem-hoverinfo">
+							<h3>A one-on-one fundraising website.</h3>
+							<p>Worked as a fullstack developer.</p>
+							<div class="portfolioitem-actions">
+								<a href="./images/02.jpg" class="tips img-circle lightbox" title="Preview image" data-placement="bottom" rel="prettyPhoto[portfolioimages]"><span class="glyphicons white zoom_in"><i></i></span></a>
+								<a href="#portfolioitem-1" class="tips more-info img-circle" title="View Project" data-placement="bottom"><span class="glyphicons white share"><i></i></span></a>
+							</div>
+						</div>
+					</div><!--/portfolioitem-->
+					
+					<div class="span3 portfolioitem portfolio-webdesign">
+						<img src="./images/thumbigem.jpg" alt="">
+						<div class="portfolioitem-hoverinfo">
+							<h3>iGEM "Nanjing-China" Team Wiki</h3>
+							<p>Team Wiki for iGEM 2013</p>
+							<div class="portfolioitem-actions">
+								<a href="./images/04.jpg" class="tips img-circle lightbox" title="Preview image" data-placement="bottom" rel="prettyPhoto[portfolioimages]"><span class="glyphicons white zoom_in"><i></i></span></a>
+								<a href="#portfolioitem-2" class="tips more-info img-circle" title="View Project" data-placement="bottom"><span class="glyphicons white share"><i></i></span></a>
+							</div>
+						</div>
+					</div><!--/portfolioitem-->
+					
+					
+					
+					
+			
+			
+			
+				</div><!--/row-->
+				<!-- /Featured Portfolio Items -->
+
+			
+				
+		</div><!--/section-->
+		<span class="clear"></span>	
+			  
+		
+		
+
+          
+        </div><!--/span9-->
+        <!-- END OF THE MAIN CONTENT -->
+        
+        <!-- Sidebar placed on the RIGHT of the screen -->
+        <div class="span3 sbright noprint" id="sidebar">
+          <div class="sidebar-nav equal hidden-phone">
+            <ul class="nav nav-list affix" id="resumenav">
+              <li><a href="#about-me" class="scroller">About me</a></li>
+              <li><a href="#personal-information" class="scroller">Personal Info</a></li>
+              
+              <li><a href="#education" class="scroller">Education</a></li>
+              <li><a href="#skills" class="scroller">Skills</a></li>
+			  <li><a href="#employment" class="scroller">Employment</a></li>
+              <li><a href="#research" class="scroller">Research</a></li>
+              <li><a href="#hobbies" class="scroller">Hobbies</a></li>
+              <li><a href="#portfolio" class="scroller">Portfolio</a></li>
+            </ul>
+          </div><!--/sidebar-nav -->
+          <span class="clear"></span>
+        </div><!--/span3 -->
+        
+		</div><!--/row-->
+      
+		<div id="footer">
+		<p>&copy; Matthew Zeng - 2015</p>
+		</div>
+
+</div><!--/.container-->
+
+</body>
 </html>
