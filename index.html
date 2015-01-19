@@ -113,6 +113,7 @@
 				   		<h2 class="primary-color">Software Engineer & Data Scientist</h2>
 						<div class="social-media noprint" style="margin-top:10px;">
 							<div>
+								<div class="tips icon-btn" title="GitHub" data-placement="bottom"><a href="https://github.com/immzz" class="glyphicons white github"><i></i></a></div>
 								<div class="tips icon-btn" title="Linkedin" data-placement="bottom"><a href="https://www.linkedin.com/in/mingzhizeng" class="glyphicons white linked_in"><i></i></a></div>
 							</div>
 						</div>
@@ -186,11 +187,11 @@
 					 
 					  <div class="timeline-item">
 		  			 	<div class="timeline-item-date">Sep. 2010 - June 2014</div>
-		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_plus" data-toggle="collapse" data-target="#education2"><i></i></span></div>
+		  			 	<div class="timeline-item-trigger"><span class="glyphicons white circle_minus" data-toggle="collapse" data-target="#education2"><i></i></span></div>
 		  			 	<div class="timeline-arrow"><i></i></div>
 		  			 	<div class="timeline-item-content">
 							<h3 class="timeline-item-title" data-toggle="collapse" data-target="#education2">Nanjing University</h3>
-							<div class="collapse" id="education2">
+							<div class="collapse in" id="education2">
 								<p><small class="muted">from September 2010 to June 2014</small></p>
 								<h4 class="media-heading primary-color">Bachelor in Computer Science, 3.80/4</h4>
 								<p><ul>
@@ -275,7 +276,7 @@
 		  	
 			
 		  	<div class="section" id="employment">
-			  	<h2 class="section-title"><span class="glyphicons share_alt"><i></i></span>Employment<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+			  	<h2 class="section-title"><span class="glyphicons nameplate"><i></i></span>Employment<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
 			  	
 			  	<div class="timeline">
 			  		
@@ -379,6 +380,8 @@
 			  			<span class="label tips mobtoo" title="I love ROCK music!"><span class="glyphicons white piano"><i></i>Music</span></span>
 			  			<span class="label"><span class="glyphicons white globe"><i></i>Traveling</span></span>
 			  			<span class="label"><span class="glyphicons white cake"><i></i>Cooking</span></span>
+						<span class="label tips mobtoo" title="My facorite team is Chelsea"><span class="glyphicons white soccer_ball"><i></i>Soccer</span></span>
+						<span class="label"><span class="glyphicons white camera_small"><i></i>Photography</span></span>
 			  		</div>
 			  	</div>
 			  	
@@ -398,12 +401,11 @@
 					
 					<div class="span3 portfolioitem portfolio-webdesign">
 						<img src="./images/thumbxunmeng.jpg" alt="">
-						<h3>Xunmeng.org</h3>
 						<div class="portfolioitem-hoverinfo">
-							<h3>A one-on-one fundraising website.</h3>
+							<h3>Xunmeng.org</h3>
 							<p>Worked as a fullstack developer.</p>
 							<div class="portfolioitem-actions">
-								<a href="./images/02.jpg" class="tips img-circle lightbox" title="Preview image" data-placement="bottom" rel="prettyPhoto[portfolioimages]"><span class="glyphicons white zoom_in"><i></i></span></a>
+								<a href="./images/01.jpg" class="tips img-circle lightbox" title="Preview image" data-placement="bottom" rel="prettyPhoto[portfolioimages]"><span class="glyphicons white zoom_in"><i></i></span></a>
 								<a href="#portfolioitem-1" class="tips more-info img-circle" title="View Project" data-placement="bottom"><span class="glyphicons white share"><i></i></span></a>
 							</div>
 						</div>
@@ -421,6 +423,29 @@
 						</div>
 					</div><!--/portfolioitem-->
 					
+					<div class="span3 portfolioitem portfolio-gamedesign">
+						<img src="./images/thumbzrally.jpg" alt="">
+						<div class="portfolioitem-hoverinfo">
+							<h3>Z-Rally</h3>
+							<p>A rally racing game.</p>
+							<div class="portfolioitem-actions">
+								<a href="./images/06.jpg" class="tips img-circle lightbox" title="Preview image" data-placement="bottom" rel="prettyPhoto[portfolioimages]"><span class="glyphicons white zoom_in"><i></i></span></a>
+								<a href="#portfolioitem-3" class="tips more-info img-circle" title="View Project" data-placement="bottom"><span class="glyphicons white share"><i></i></span></a>
+							</div>
+						</div>
+					</div><!--/portfolioitem-->
+					
+					<div class="span3 portfolioitem portfolio-gamedesign">
+						<img src="./images/thumbtcs.jpg" alt="">
+						<div class="portfolioitem-hoverinfo">
+							<h3>The Crime Scene</h3>
+							<p>An escaping game.</p>
+							<div class="portfolioitem-actions">
+								<a href="./images/09.jpg" class="tips img-circle lightbox" title="Preview image" data-placement="bottom" rel="prettyPhoto[portfolioimages]"><span class="glyphicons white zoom_in"><i></i></span></a>
+								<a href="#portfolioitem-4" class="tips more-info img-circle" title="View Project" data-placement="bottom"><span class="glyphicons white share"><i></i></span></a>
+							</div>
+						</div>
+					</div><!--/portfolioitem-->
 					
 					
 					
@@ -430,7 +455,76 @@
 				</div><!--/row-->
 				<!-- /Featured Portfolio Items -->
 
+				<div class="row" id="full-portfolio-items">
+					<div class="span9">
 			
+						<a href="#" class="btn btn-primary hidden" id="portfolio-back">&larr; Back to Portfolio List</a>
+			
+						<!-- This is a Portfolio item -->
+						<div class="portfolioitem-content hidden" id="portfolioitem-1">
+							<img src="./images/01.jpg" alt="">
+							<h2 class="primary-color">Xunmeng.org</h2>
+							
+							<h3>A one-on-one fund-raising platform</h3>
+							<p>The essential motivation to build this platform rooted from a volunteer activity in Guizhou province in China. We met many children who is eager to go to school but their family can't afford the cost. We collected their basic information and after coming back, we decided to build a website to help.</p>
+							<ul class="pager">
+								<li class="previous"><a href="#portfolioitem-2" class="">&larr; Previous</a></li>
+								<li class="next"><a href="#portfolioitem-2" class="">Next &rarr;</a></li>
+							</ul>
+						
+						</div>
+						<!-- /Portfolio item -->
+						
+						<!-- This is a Portfolio item -->
+						<div class="portfolioitem-content hidden" id="portfolioitem-2">
+							<img src="./images/04.jpg" alt="">
+							<h2 class="primary-color">iGEM Team Wiki</h2>
+							
+							<h3>Team Wiki for iGEM 2013</h3>
+							<p>Worked as a fullstack developer. Collaborated with my teammates and built the team Wiki using MediaWiki.</p>
+							<ul class="pager">
+								<li class="previous"><a href="#portfolioitem-1" class="">&larr; Previous</a></li>
+								<li class="next"><a href="#portfolioitem-1" class="">Next &rarr;</a></li>
+							</ul>
+						
+						</div>
+						<!-- /Portfolio item -->
+						
+						<!-- This is a Portfolio item -->
+						<div class="portfolioitem-content hidden" id="portfolioitem-3">
+							<img src="./images/06.jpg" alt="">
+							<h2 class="primary-color"></h2>
+							
+							<h3>Z-Rally</h3>
+							<p>A rally racing game.</p>
+							<ul class="pager">
+								<li class="previous"><a href="#portfolioitem-2" class="">&larr; Previous</a></li>
+								<li class="next"><a href="#portfolioitem-4" class="">Next &rarr;</a></li>
+							</ul>
+						
+						</div>
+						<!-- /Portfolio item -->
+						
+						<!-- This is a Portfolio item -->
+						<div class="portfolioitem-content hidden" id="portfolioitem-4">
+							<img src="./images/09.jpg" alt="">
+							<h2 class="primary-color"></h2>
+							
+							<h3>The Crime Scene</h3>
+							<p>An ecaping game.</p>
+							<ul class="pager">
+								<li class="previous"><a href="#portfolioitem-3" class="">&larr; Previous</a></li>
+								<li class="next"><a href="#portfolioitem-1" class="">Next &rarr;</a></li>
+							</ul>
+						
+						</div>
+						<!-- /Portfolio item -->
+						
+						
+			
+				</div><!--/span9-->
+			
+			</div><!--/row-->
 				
 		</div><!--/section-->
 		<span class="clear"></span>	
